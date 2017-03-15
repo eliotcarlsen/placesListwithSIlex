@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Oh, the places you've been</title>
+  </head>
+  <body>
+    <h1>Here's a list of where you've been!</h1>
+    <ul>
+        {% for place in places  %}
+          <li>{{ place.getLocation }}</li>
+            <ul>
+              <li>{{ place.getTime }}</li>
+              <li>{{ place.getActivity }}</li>
+            </ul>
+        {% endfor %}
+    </ul>
+  </body>
+</html>
